@@ -1,0 +1,8 @@
+__author__ = "John Knowles"
+__copyright__ = "Copyright 2017, Crypto Challenges"
+__credits__ = [""]
+__license__ = "GPL"
+__version__ = "1.0.1"
+__maintainer__ = "John Knowles"
+__email__ = "j.knowles@zoho.com"
+__status__ = "Production"
