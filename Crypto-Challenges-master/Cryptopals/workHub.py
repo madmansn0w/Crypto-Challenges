@@ -45,8 +45,14 @@ def hexDecodeHack(arg):
     return strSeq
 
 
-def detXOR(*args):
-    '''XOR two or more strings.
-    Exclusive Or yields true for differing values.'''
-    aln = [''.join(x) for x in zip(args[0], args[1])]
-    return aln
+def freqCount(tokens):
+    '''Character Counter'''
+    freq = {}
+    for token in tokens:
+        if token not in freq:
+            freq[token] = 1
+        else:
+            freq[token] += 1
+    alphaSort = sorted(freq, key=freq.__getitem__, reverse=True)
+    alphaSort = [x for x in alphaSort if x.isalnum()]
+    return alphaSort
